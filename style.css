@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+
+/* Reset e Cores da página */
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'League Spartan', sans-serif;
+}
+
+
+:root {
+
+--roxo: #512051;
+--roxo-claro: #927B91;
+--rosa-claro:#EE69A4;
+--amarelo:#EF9546;
+--letras: #ffff;
+--background: #F2F2F2;
+}
+
+body {
+  background-color: var(--background);
+}
+
+/* configuração do conteúdo da página */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  min-width: 450px;
+}
+
+
+/* configuração da parte de cima do site */
+
+.up-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 450px;
+  margin-bottom: 71px;
+}
+
+/* Parte do título e Parágrafo */
+
+.tittle-paragrafh {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 16px;
+  min-width: 450px;
+  padding-left: 60px;
+}
+
+.tittle {
+  color: var(--roxo);
+  font-weight: 700;
+  font-size: 56px;
+  width: 60%;
+}
+
+.paragrafh {
+
+  color: var(--roxo-claro);
+  font-weight: 500;
+  font-size: 19px;
+  width: 60%;
+}
+
+/* Parte das avaliações */
+
+.assessments {
+
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  height: 200px;
+  gap: 16px;
+}
+
+.rate-box {
+
+  display: flex;
+  width: 445px;
+  height: 56px;
+  padding-left: 32px;
+  align-items: center;
+  background-color: #F7F2F7;
+  border-radius: 10px;
+  box-shadow: 5px 1px 1px rgba(0, 0, 0, 0.305);
+}
+
+.star {
+
+  color: var(--amarelo);
+  padding-right: 32px;
+
+}
+
+.rate-paragrafh {
+
+  color: var(--roxo);
+  font-weight: 700;
+  font-size: 17px;
+
+}
+
+/*Alinhamento das caixas */
+
+.box-1 {
+
+display: flex;
+align-self: flex-start;
+
+}
+
+.box-2 {
+
+  display: flex;
+  align-self: center;
+
+}
+
+.box-3 {
+
+  display: flex;
+  align-self: flex-end;
+
+}
+
+/* Parte de baixo da página */
+
+.down-side {
+
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  width: 1110px;
+  height: 266px;
+  gap: 30px;
+
+}
+
+.card-comment {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 32px;
+  width: 350px;
+  height: 234px;
+  background-color: var(--roxo);
+  border-radius: 10px;
+  box-shadow: 5px 1px 1px rgba(0, 0, 0, 0.305);
+
+}
+
+.perfil {
+
+  display: flex;
+  align-items:flex-start;
+  padding-bottom: 31px;
+
+}
+
+.name-profile {
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-left: 23px;
+
+}
+
+.name {
+
+  color: var(--letras);
+  font-weight: 700;
+  font-size: 17px;
+
+}
+
+.profile {
+
+  color: var(--rosa-claro);
+  font-weight: 400;
+  font-size: 17px;
+
+}
+
+.card-paragrafh {
+
+  color: var(--letras);
+  font-weight: 500;
+  font-size: 17px;
+  padding-right: 32px;
+  text-align: justify;
+
+}
+
+/* Alinhamento dos cards */
+
+.card-1 {
+
+  display: flex;
+  align-self: flex-start;
+}
+
+.card-2 {
+
+  display: flex;
+  align-self: center;
+
+}
+
+.card-3 {
+
+  display: flex;
+  align-self: flex-end;
+
+}
+
+
+/*Media Query */
+
+@media (max-width: 600px) {
+  .container {
+
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .up-side {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .tittle-paragrafh {
+
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    padding-top: 20px;
+  }
+
+  .tittle {
+    
+    width: 100%;
+    height: auto;
+    padding-bottom: 17px;
+  }
+
+  .paragrafh {
+
+    width: 100%;
+    height: auto;
+    padding-bottom: 39px;
+
+  }
+
+  .rate-box {
+
+    display: flex;
+    align-self: center;
+    width: 70%;
+    
+    
+  }
+
+  .down-side {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-comment {
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 327px;
+    height: 248px;
+    padding: 32px 32px;
+    
+  }
+
+
+}
+
+
+
+
+
